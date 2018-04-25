@@ -57,7 +57,7 @@ function breaker($url,$homedate,$wait_time){
 
        if( diff_time <= 0 ){
          clearInterval(breaker_interval);
-         document.getElementById("timer").innerHTML ="HOME TIME!!";
+         document.getElementById("timer").innerHTML ="HOME TIME!?";
        }else{
          document.getElementById("timer").innerHTML = hour + ":" + minute + ":" + seconds;
        }
@@ -69,7 +69,7 @@ function breaker($url,$homedate,$wait_time){
   $url = "https://www.youtube.com/watch?v=gxSx3h9GKgo";#Kwata kawaya - kasolo's favourite :)
 
   //Let's assume that Kasolo works until 5pm - we will utilise this to stop the script
-  $homedate = date("Y-m-d") . ' 12:43';
+  $homedate = date("Y-m-d") . ' 12:25';
 
   //how long until the next interrupt?
   //for testing, keep it something small - like 10 seconds
