@@ -49,4 +49,8 @@ ul.dashed > li:before {
   text-indent: -5px;
 }
 </style>
+<<<<<<< HEAD
 </head>
+=======
+</head>
+>>>>>>> 6af4ee090a954893167e64942c086e15e9c8bca4

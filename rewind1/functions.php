@@ -42,12 +42,23 @@ function order_names($name,$ip=false,$order2 = false){
   //create an array of all three names
   //NB: First we need to replace the comma separating surname and other_name using str_replace()
   $name_array = explode(' ',str_replace(',',' ',$name));
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6af4ee090a954893167e64942c086e15e9c8bca4
   //surname,first_name second_name
   if( $order2 ):
     //remove the first element and save it in a variable
     $surname = array_shift($name_array);
+<<<<<<< HEAD
     //add it to the end
     array_push($name_array,$surname);
+=======
+
+    //add it to the end
+    array_push($name_array,$surname);
+
+>>>>>>> 6af4ee090a954893167e64942c086e15e9c8bca4
     if( $ip ){
       //add url to the first_name,we can access it directly since it is the first element
       $first_name = "<a href='{$ip}' target='_blank'>{$name_array[0]}</a>";
@@ -56,8 +67,15 @@ function order_names($name,$ip=false,$order2 = false){
     //convert the array into a space delimited string and surname
     //return both as an array
     return [implode(' ',$name_array),$surname];
+<<<<<<< HEAD
   //surname,second_name,first_name
   else:
+=======
+
+  //surname,second_name,first_name
+  else:
+
+>>>>>>> 6af4ee090a954893167e64942c086e15e9c8bca4
     //reverse the array
     $name_array_reversed = array_reverse($name_array);
     if( $ip  ):
@@ -67,7 +85,13 @@ function order_names($name,$ip=false,$order2 = false){
     endif;
     //convert the array into a space delimited string
     return implode(' ',$name_array_reversed);
+<<<<<<< HEAD
   endif;
+=======
+
+  endif;
+
+>>>>>>> 6af4ee090a954893167e64942c086e15e9c8bca4
 }
 /**
  * Returns a different number format e.g. +254 (0) 111 333 444
@@ -81,4 +105,8 @@ function modify_number($number){
   $num_chunked = chunk_split($num,3,' ');
   return ' (0) '.$num_chunked;
 }
+<<<<<<< HEAD
  ?>
+=======
+ ?>
+>>>>>>> 6af4ee090a954893167e64942c086e15e9c8bca4

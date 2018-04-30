@@ -71,10 +71,14 @@ function breaker($url,$homedate,$wait_time){
 
   //Let's assume that Kasolo works until 5pm - we will utilise this to stop the script
 <<<<<<< HEAD
+<<<<<<< HEAD
   $homedate = date("Y-m-d") . ' 12:25';
 =======
   $homedate = date("Y-m-d") . ' 13:21';
 >>>>>>> b11a44ae217e560217985cb52687166d38273394
+=======
+  $homedate = date("Y-m-d") . ' 13:21';
+>>>>>>> 6af4ee090a954893167e64942c086e15e9c8bca4
 
   //how long until the next interrupt?
   //for testing, keep it something small - like 10 seconds
