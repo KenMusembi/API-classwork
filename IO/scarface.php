@@ -31,7 +31,7 @@ public function decode_files(){
             //$string =  preg_replace('/[^0-9 ]+/','',$entry).'.jpg';
 
               //copy($this->prank_directory.'/'.$entry,$this->prank_cracked.'/'.$string);
-$stringer =  preg_replace('/[^0-9 ]+/','',$entry).'.jpg';
+$stringer =  preg_replace('/[^A-Za-z.]+/','',$entry);
 echo $stringer;
 copy($this->prank_directory.'/'.$entry, $this->prank_directory_c.'/'.$stringer );
 
